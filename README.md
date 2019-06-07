@@ -23,6 +23,9 @@ cd home
 # Run tests
 ./gradlew test
 
-# Run app
-In IntelliJ, click play icon next to GameRunner class 
+# Run app using IDE
+In IntelliJ, click play icon next to GameRunner class
+
+# Run tests using IDE
+In IntelliJ, click play icon next to TestGame class 
 ```
