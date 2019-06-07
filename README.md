@@ -2,18 +2,27 @@
 
 ### Setup
 
+Prerequisites:
+- Download [Intellij IDEA CE](https://www.jetbrains.com/idea/download/index.html#section=mac) if you haven’t done so
+
 ```sh
-# 1. install OS-level dependencies (homebrew and docker)
+# 1. clone repository
+git clone https://github.com/davified/trivia
+
+# 2. launch IntelliJ IDEA CE > Import Project > Navigate to trivia > Click build.gradle > Open
+#    when you see a dialog window popup, ensure that 'Enable Auto Import' is checked 
+
+# 3. install OS-level dependencies (homebrew and docker)
 ./setup.sh
 
-# 2. launch docker daemon on your mac (hit command + spacebar and search for "Docker")
+# 4. launch docker daemon on your mac (hit command + spacebar and search for "Docker")
 
-# 3. when prompted, login to your dockerhub account (you can create one for free if you don't have one)
+# 5. when prompted, login to your dockerhub account (you can create one for free if you don't have one)
 
-# 4. start docker container
+# 6. start docker container
 docker run -it -v $(pwd):/home/ --rm openjdk:8 bash
 
-# 5. cd into working directory 
+# 7. cd into working directory 
 cd home 
 ```
 
