@@ -3,13 +3,17 @@
 ### Setup
 
 ```sh
-# install OS-level dependencies (homebrew and docker)
+# 1. install OS-level dependencies (homebrew and docker)
 ./setup.sh
 
-# start docker container
+# 2. launch docker daemon on your mac (hit command + spacebar and search for "Docker")
+
+# 3. when prompted, login to your dockerhub account (you can create one for free if you don't have one)
+
+# 4. start docker container
 docker run -it -v $(pwd):/home/ --rm openjdk:8 bash
 
-# cd into working directory 
+# 5. cd into working directory 
 cd home 
 ```
 
