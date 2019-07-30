@@ -15,11 +15,14 @@ git clone https://github.com/davified/trivia
 # 3. install OS-level dependencies (homebrew and docker)
 ./setup.sh
 
-# 4. launch docker daemon on your mac (hit command + spacebar and search for "Docker")
+# 4. install jdk8 (your IDE will need this)
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 
-# 5. when prompted, login to your dockerhub account (you can create one for free if you don't have one)
+# 5. launch docker daemon on your mac (hit command + spacebar and search for "Docker")
 
-# 6. start docker container
+# 6. when prompted, login to your dockerhub account (you can create one for free if you don't have one)
+
+# 7. start docker container
 docker run -it -v $(pwd):/home/ --rm openjdk:8 bash
 
 # 7. cd into working directory 
